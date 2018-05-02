@@ -92,7 +92,7 @@ module.exports = {
 		    cache: false,
     		chunks: ['app'],
             template: './src/index.html',
-            minify: minify
+            minify: false
 		}),
 
 	]
