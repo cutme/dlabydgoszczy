@@ -1,0 +1,56 @@
+.c-page {
+    @extend %rel;
+    padding-top: 60px;
+    
+    @media screen and ( max-width: $project + px ) {
+        padding-top: get-vw-project(60);
+    }
+    
+    @media screen and ( max-width: $tablet + px ) {
+        padding-top: get-vw-tablet(60);
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        padding-top: get-vw-tablet-portrait(60);
+    }
+    
+    @media screen and ( max-width: $tablet + px ) {
+        text-align: center;
+    }
+    
+    &__text {
+        @media screen and ( min-width: $tablet + 1px ) {
+            width: 50%;
+            padding-left: 30px;
+        }
+    }
+    
+    &:after {
+        @extend %abs;
+        @extend %abs-after;
+        width: 127px;
+        height: 100%;
+        background: {
+            image: url(../img/cut.svg);
+            repeat: no-repeat;
+            size: 100% 100%;
+        }
+        left: 50%; top: 0;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            display: none;
+        }
+        
+    }
+}
+
+.c-add {
+    
+    //position: absolute;
+/*
+    @extend %abs;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%)
+*/
+}

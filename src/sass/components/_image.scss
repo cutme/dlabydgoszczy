@@ -1,0 +1,64 @@
+.c-image {
+    @extend %rel;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    &--bottom {
+        @media screen and ( min-width: $tablet + 1px ) {
+           // top: calc(50% + 35px);
+           top: 50%;
+        }
+    }
+    
+    &--top {
+        z-index: 10;
+        margin-bottom: 100px;
+        
+        @media screen and ( max-width: $base + px ) {
+            margin-bottom: get-vw-base(100);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            margin-bottom: get-vw-tablet-portrait(100);
+        }
+        
+        @media screen and ( min-width: $tablet + 1px ) {
+            top: 0;
+        }
+        
+        
+    }
+    
+    @media screen and ( min-width: $tablet + 1px ) {
+        position: absolute;
+        right: 0;
+        max-width: auto;
+        width: 50%;
+        //height: calc(50% + 35px);
+        height: 50%;
+        background-color: gray;
+        
+        
+        &__item {
+            position: absolute;
+            width: 100%; height: 100%;
+            overflow: hidden;
+        }
+        
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: auto;
+            max-width: none;
+        }
+    }
+    
+    .o-btn {
+        @extend %abs;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        bottom: 0;
+    }
+}

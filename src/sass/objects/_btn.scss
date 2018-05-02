@@ -1,0 +1,36 @@
+.o-btn {
+    @extend %anim;
+    @extend %flex-xy;
+    @extend %rel;
+    display: inline-flex;
+    background-color: $c-green;
+    padding: 20px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    white-space: nowrap;
+    font: {
+        size: rem(42);
+        weight: $bold;
+    }
+    color: white;
+    
+    @media screen and ( max-width: $project + px ) {
+        padding: get-vw-project(20) get-vw-project(30);
+        font-size: get-vw-project(42);
+    }
+    
+    @media screen and ( max-width: $tablet + px ) {
+        padding: get-vw-tablet(20) get-vw-tablet(30);
+        font-size: get-vw-tablet(42);
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        padding: get-vw-tablet-portrait(20) get-vw-tablet-portrait(30);
+        font-size: get-vw-tablet-portrait(42);
+    }
+   
+    &:hover {
+        background-color: darken($c-green, 5%);
+    }
+    
+}

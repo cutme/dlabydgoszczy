@@ -1,0 +1,32 @@
+
+@import 'settings/colors.scss';
+@import 'settings/global.scss';
+
+@import 'tools/anims';
+@import 'tools/clear';
+@import 'tools/form';
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'tools/pace';
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+
+@import 'elements/extends';
+@import 'elements/media';
+@import 'elements/page';
+@import 'elements/typography';
+
+@import 'objects/btn';
+@import 'objects/container';
+@import 'objects/header';
+@import 'objects/icons';
+
+@import 'components/benefits';
+@import 'components/footer';
+@import 'components/image';
+@import 'components/logo';
+@import 'components/page';
+
+@import 'trumps/trumps';
+

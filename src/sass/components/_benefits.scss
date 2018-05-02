@@ -1,0 +1,82 @@
+.c-benefits {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px 100px 20px;
+    
+    @media screen and ( max-width: $project + px ) {
+        padding-bottom: get-vw-project(100);
+    }
+    
+    @media screen and ( max-width: $base + px ) {
+       padding-bottom: get-vw-base(100);
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+       padding-bottom: get-vw-tablet-portrait(100);
+    }
+
+    li {
+        @extend %flex;
+        margin-bottom: 30px;
+        text-align: left;
+        
+        @media screen and ( max-width: $project + px ) {
+            margin-bottom: get-vw-project(30);
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            margin-bottom: get-vw-tablet(30);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            margin-bottom: get-vw-tablet-portrait(30);
+        }
+    }
+
+    p {
+        font: {
+            size: rem(35);
+            weight: $bold;
+        }
+        
+        @media screen and ( max-width: $project + px ) {
+            font-size: get-vw-project(35);
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            font-size: get-vw-tablet(35);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: get-vw-tablet-portrait(35);
+        }
+        
+        & + p {
+            font-size: rem(28);
+            
+            @media screen and ( max-width: $project + px ) {
+                font-size: get-vw-project(28);
+            }
+            
+            @media screen and ( max-width: $tablet + px ) {
+                font-size: get-vw-tablet(28);
+            }
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                font-size: get-vw-tablet-portrait(28);
+            }
+        }
+    }
+    
+    .o-icon {
+        margin-right: 40px;
+        
+        @media screen and ( max-width: $base + px ) {
+            margin-right: get-vw-base(40);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            margin-right: get-vw-tablet-portrait(40);
+        }
+    }
+}

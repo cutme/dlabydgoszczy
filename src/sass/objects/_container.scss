@@ -1,0 +1,11 @@
+.o-container {
+    @extend %anim;
+	height: 100%;
+	overflow: hidden;
+    opacity: 0;
+
+	.pace-done & {
+		opacity: 1;
+	}
+	
+}

@@ -1,0 +1,33 @@
+.o-icon {
+    display: block;
+    width: 100px; height: 100px;
+    background: {
+        repeat: no-repeat;
+        size: contain;
+        position: center top;
+    }
+    
+    @media screen and ( max-width: $project + px ) {
+        width: get-vw-project(100); height: get-vw-project(100);
+    }
+    
+    @media screen and ( max-width: $base + px ) {
+        width: get-vw-base(100); height: get-vw-base(100);
+    }
+    
+    &--blog {
+        background-image: url(../img/icons/blog.png);
+    }
+    
+    &--money {
+        background-image: url(../img/icons/money.png);
+    }
+
+    &--range {
+        background-image: url(../img/icons/range.png);
+    }
+    
+    &--template {
+        background-image: url(../img/icons/template.png);
+    }
+}

@@ -1,0 +1,38 @@
+.c-footer {
+    @extend %rel;
+    z-index: 10;
+    //min-height: 70px;
+    background-color: $c-blue;
+    padding: 30px 40px;
+    text-align: center;
+    
+    @media screen and ( max-width: $project + px ) {
+        height: get-vw-project(70);
+    }
+    
+    @media screen and ( max-width: $tablet + px ) {
+        height: get-vw-tablet(70);
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        height: get-vw-tablet-portrait(70);
+    }
+
+
+    
+    @media screen and ( max-width: $tablet + px ) {
+       padding: get-vw-base(30) get-vw-base(40);
+       height: auto;
+       
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+       padding: 20px;
+    }
+    
+    .o-btn {
+        @media screen and ( min-width: $tablet + 1px ) {
+            display: none;
+        }
+    }
+}

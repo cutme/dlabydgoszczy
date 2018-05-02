@@ -1,0 +1,20 @@
+.c-logo {
+    display: block;
+    width: 280px;
+    margin: 0 auto 50px auto;
+    
+    @media screen and ( max-width: $project + px ) {
+        width: get-vw-project(280);
+        margin-bottom: get-vw-project(50);
+    }
+    
+    @media screen and ( max-width: $tablet + px ) {
+        width: get-vw-tablet(280);
+        margin-bottom: get-vw-tablet(50);
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        width: get-vw-tablet-portrait(280);
+        margin-bottom: get-vw-tablet-portrait(50);
+    }
+}

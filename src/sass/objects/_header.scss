@@ -1,0 +1,43 @@
+.o-header {
+    padding: 0 20px;
+
+    &__primary {
+        margin-bottom: 1em;
+        font: {
+            size: rem(48);
+            weight: $bold;
+        }
+        
+        @media screen and ( max-width: $project + px ) {
+            font-size: get-vw-project(48);
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            font-size: get-vw-tablet(48);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: get-vw-tablet-portrait(48);
+        }
+    }  
+ 
+    &__secondary {
+        margin-bottom: 1.5em;
+        font: {
+            size: rem(42);
+            weight: $bold;
+        }
+        
+        @media screen and ( max-width: $project + px ) {
+            font-size: get-vw-project(42);
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            font-size: get-vw-tablet(42);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: get-vw-tablet-portrait(42);
+        }
+    }
+}
