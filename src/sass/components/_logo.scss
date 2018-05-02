@@ -1,15 +1,18 @@
 .c-logo {
     display: block;
     width: 280px;
-    margin: 0 auto 50px auto;
+    margin-bottom: 50px;
     
     @media screen and ( max-width: $project + px ) {
         width: get-vw-project(280);
+        margin-left: 30px;
         margin-bottom: get-vw-project(50);
     }
     
     @media screen and ( max-width: $tablet + px ) {
         width: get-vw-tablet(280);
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: get-vw-tablet(50);
     }
     

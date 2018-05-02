@@ -71,8 +71,12 @@
     .o-icon {
         margin-right: 40px;
         
-        @media screen and ( max-width: $base + px ) {
-            margin-right: get-vw-base(40);
+        @media screen and ( max-width: $project + px ) {
+            margin-right: get-vw-project(40);
+        }
+        
+        @media screen and ( max-width: $tablet + px ) {
+            margin-right: get-vw-tablet(40);
         }
         
         @media screen and ( max-width: $tablet_portrait + px ) {
